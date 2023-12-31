@@ -33,6 +33,7 @@ app.use(ElementPlus, {
 })
 setupStore()
 app.use(ElementPlus)
+
 app
   .use(router as any)
   .use(store as any)
