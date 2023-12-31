@@ -32,8 +32,8 @@ app.use(ElementPlus, {
   locale: zhCn
 })
 setupStore()
-app.use(ElementPlus)
-app
+createApp(App).use(ElementPlus)
+createApp(App)
   .use(router as any)
   .use(store as any)
   .mount('#app')
